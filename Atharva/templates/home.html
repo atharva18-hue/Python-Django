@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Cinematic Universe</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Keep Background Dark (Marvel Theme) */
+        body {
+            background: #222; /* Same Dark Theme */
+            color: white;
+        }
+
+        /* Headline Styling */
+        .main-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 20px; /* Adjusted for Perfect Positioning */
+        }
+
+        /* Image Container (Moved Below) */
+        .image-container {
+            width: 100%;
+            max-width: 900px; /* Control Image Width */
+            height: 350px; /* Maintain Aspect Ratio */
+            overflow: hidden;
+            margin: 30px auto 0; /* Moves Below Title */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px; /* Softened Borders */
+        }
+
+        /* Button Styling */
+        .btn-marvel {
+            background: linear-gradient(45deg, #ff0000, #8b0000);
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+            display: block;
+        }
+        .btn-marvel:hover {
+            background: linear-gradient(45deg, #8b0000, #ff0000);
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Title (Now Above the Image) -->
+    <h1 class="main-title">Marvel Cinematic Universe</h1>
+
+    <!-- Image Below the Headline -->
+    <div class="image-container">
+        <img src="https://giffiles.alphacoders.com/126/12673.gif" alt="Marvel Universe Image">
+    </div>
+
+    <!-- Main Navigation -->
+    <!-- Main Navigation -->
+<!-- Main Navigation -->
+<!-- Main Navigation -->
+<div class="container mx-auto text-center py-6">
+    
+    <!-- First Row (Reduced Gap) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-6">
+        <div class="flex justify-center">
+            <a href="/movies-sequence/" class="btn-marvel w-full max-w-xs">All Marvel Movies in Sequence</a>
+        </div>
+        <div class="flex justify-center">
+            <a href="/search-superhero/" class="btn-marvel w-full max-w-xs">Search Marvel Superhero</a>
+        </div>
+        <div class="flex justify-center">
+            <a href="/create-superhero/" class="btn-marvel w-full max-w-xs">Create Your Own Superhero</a>
+        </div>
+    </div>
+
+    <!-- Second Row (Centered Buttons) -->
+    <div class="md:col-span-3 flex justify-center gap-6 mt-6">
+        <a href="/fan-stories/" class="btn-marvel w-full max-w-xs">Fan Stories Section</a>
+        <a href="/upcomeingmarvelmovies/" class="btn-marvel w-full max-w-xs">Upcoming Marvel Movies</a>
+    </div>
+    
+</div>
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2025 Marvel Universe | Powered by the stories of heroes and fans.
+    </div>
+
+</body>
+</html>

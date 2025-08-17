@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Marvel Movies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .btn-marvel {
+            background: linear-gradient(45deg, #ff0000, #990000);
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn-marvel:hover {
+            background: linear-gradient(45deg, #cc0000, #660000);
+        }
+        .input-marvel {
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Search Form -->
+    <div class="flex justify-center items-center h-screen">
+        <form method="POST" action="/downlodmovietourl/" class="text-center">
+            {% csrf_token %}
+            <h1 class="text-3xl font-bold text-red-500 mb-5">Search Marvel Movie</h1>
+            <input type="text" name="name" class="input-marvel mb-4" placeholder="Enter Movie Name..." required>
+            <br>
+            <button type="submit" class="btn-marvel">Search</button>
+        </form>
+    </div>
+
+</body>
+</html>

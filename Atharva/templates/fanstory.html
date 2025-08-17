@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Universe</title>
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .block-link:hover {
+            background-color: #ff3b3f;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        }
+        .swiper-container {
+            width: 80%; /* Makes the slider smaller in width */
+            height: 50vh; /* Reduced height */
+            margin: 20px auto; /* Centers and adds space on both sides */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6);
+        }
+        .swiper-slide img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Image Slider at the Top -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://media3.giphy.com/media/vBjLa5DQwwxbi/giphy.gif?cid=6c09b9528dnxkgqso8msobdgqamt7xi1j76h610qex2ctv5f&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Black Panther">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.gifcen.com/wp-content/uploads/2023/08/avengers-gif-7.gif" alt="Marvel Heroes">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/app/thread/20240309/5861708060047218341/1548269571176136707/1548269571176136707.gif" alt="Avengers Endgame">
+            </div>
+        </div>
+        <!-- Pagination and Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Bottom Section with Two Blocks -->
+    <div class="container mx-auto py-10 grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+        <!-- Marvel User Fan Story -->
+        <a href="/showfanstory/" class="block-link p-10 bg-red-600 rounded-lg transform transition hover:scale-105">
+            <h2 class="text-3xl font-bold">Marvel User Fan Story</h2>
+            <p class="mt-4">Explore exciting stories written by Marvel fans just like you!</p>
+        </a>
+        <!-- Create Your Fan Story -->
+        <a href="/add-fan-story/" class="block-link p-10 bg-red-600 rounded-lg transform transition hover:scale-105">
+            <h2 class="text-3xl font-bold">Create Your Fan Story</h2>
+            <p class="mt-4">Unleash your imagination and become a part of the Marvel Universe!</p>
+        </a>
+    </div>
+
+    <!-- Swiper.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+</html>

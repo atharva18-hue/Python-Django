@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Not Found</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #fff;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff0000;
+            text-shadow: 0px 0px 10px #ff0000;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        .btn-marvel {
+            background-color: #ff0000;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn-marvel:hover {
+            background-color: #d40000;
+        }
+        .hero-image {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+            filter: drop-shadow(0px 0px 10px red);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Superhero Not Found</h1>
+        <p>Oops! The superhero you're searching for is not in our Marvel Universe records.</p>
+        <img src="/static/mlogo.gif" alt="Superhero Not Found" class="hero-image">
+        <p>But don't worry, heroes are everywhere! Try searching again or create your own superhero.</p>
+        <a href="/home/" class="btn-marvel">Go Back to Home</a>
+    </div>
+
+</body>
+</html>

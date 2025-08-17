@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: #1a1a1a; /* Dark background for a Marvel feel */
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        }
+        h1 {
+            color: #ff0000;
+            text-transform: uppercase;
+        }
+        p {
+            color: #ccc;
+        }
+        .home-btn, .search-again-btn {
+            margin-top: 20px;
+            display: inline-block;
+            background: #ff0000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .home-btn:hover, .search-again-btn:hover {
+            background: #d00000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Not Found</h1>
+        <p>Sorry, the movie you are looking for is not available for download.</p>
+        <a href="/home/" class="home-btn">Go to Home</a>
+        <a href="/downloadmovie/" class="search-again-btn">Search Again</a>
+    </div>
+</body>
+</html>
