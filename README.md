@@ -23,7 +23,7 @@ Users can explore Marvel movies in sequence, search superheroes, create their ow
 ---
 
 ## 📸 Screenshots
-![Marvel App Screenshot](assets/screenshot.png)  
+![Marvel App Screenshot](assets/image.png)  
 *(Replace with actual project screenshots)*
 
 ---
